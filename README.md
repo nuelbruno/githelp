@@ -16,24 +16,24 @@
 
 1. changed something in index.html then if you need to go back to previous or original state then enter
 
-    -  git checkout index.html
+    -  > git checkout index.html
     
 2.  To revert back changes from staging area
 
-    -  git reset HEAD index.html  (removes changes in staging area), then git add . git commit
+    -  > git reset HEAD index.html  (removes changes in staging area), then git add . git commit
     
 3.  File deletion
 
-     -  Delete a file from code then bring it back through git
-       - git checkout about.html (deleted file from code)
-     - To push delete in stageing
-       git add about.html ( file delted from git) 
-       git reset HEad about.html ->git rm about.html ( revert back delete and then delete the file in fast way)
+     -  > Delete a file from code then bring it back through git
+       - > git checkout about.html (deleted file from code)
+     - > To push delete in stageing
+       > git add about.html ( file delted from git) 
+       > git reset HEad about.html ->git rm about.html ( revert back delete and then delete the file in fast way)
       
  //#### LOG ##### //
  1.  To move back to prevous or any commit made
  
-     -  git log -> list all longs & hash code -> git checkout hashcode ( hashcode of the commit you want to revise/ redo) if you commit any thing at this stage, you will have a branch with that name like *(head detached) / master, you can move back to master to view the orginial commites which are made before git checkout hashcode
+     - > git log -> list all longs & hash code -> git checkout hashcode ( hashcode of the commit you want to revise/ redo) if you commit any thing at this stage, you will have a branch with that name like *(head detached) / master, you can move back to master to view the orginial commites which are made before git checkout hashcode
      
  2. To create new branch
  
