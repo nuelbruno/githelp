@@ -9,3 +9,5 @@
 #git commit -m "commt message" 
 
 #git add . => to add all files to staging area
+
+//#### FILE IN/OUT in STAGING AREA ##### //
