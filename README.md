@@ -1,16 +1,16 @@
 # githelp
 
-### git init => to setup git
+> git init => to setup git
 
-### git add file_name => to add file to staging area
+> git add file_name => to add file to staging area
 
-### git log => to view logs of commits made
+> git log => to view logs of commits made
 
-### git commit -m "commt message" 
+> git commit -m "commt message" 
 
-### git add . => to add all files to staging area
+> git add . => to add all files to staging area
 
-### git status => to view git status of all files
+> git status => to view git status of all files
 
 //#### FILE IN/OUT in STAGING AREA ##### //
 
@@ -81,5 +81,37 @@
         - after that
         > git reset --hard
       
+ // #### branch as template ### //
  
+ 1. To copy of specific branch
+  
+     > git clone -b git_url
+     
+ // Resolve merge conflict
+ 
+
+
+```
+    > $ git status
+> # On branch branch-b
+> # You have unmerged paths.
+> #   (fix conflicts and run "git commit")
+> #
+> # Unmerged paths:
+> #   (use "git add ..." to mark resolution)
+> #
+> # both modified:      styleguide.md
+> #
+> no changes added to commit (use "git add" and/or "git commit -a")
+```
+> Decide if you want to keep only your branch's changes, keep only the other branch's changes, or make a brand new change, which may incorporate changes from both branches. Delete the conflict markers <<<<<<<, =======, >>>>>>> and make the changes you want in the final merge. In this example, both changes are incorporated into the final merge:
+ ```
+ If you have questions, please
+<<<<<<< HEAD
+open an issue
+=======
+ask your question in IRC.
+>>>>>>> branch-a
+```
+- then  > $ git add .
  
