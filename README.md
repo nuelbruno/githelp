@@ -76,9 +76,9 @@
   3. To clone all branches from origin
       
         > git clone --mirror url_of_git .git
-        after that 
+        - after that 
         > git config --bool core.bare false
-        after that
+        - after that
         > git reset --hard
       
  
